@@ -1,0 +1,17 @@
+.nav-link{
+	transition-duration:0.4s;
+}
+
+.nav-link:hover{
+	background-color:black;
+}
+
+span.style{
+	color:#F6D757;
+	border:solid #F6D757;
+	transition-duration:0.4s;
+}
+
+span.style:hover{
+	background-color:darkviolet;
+}

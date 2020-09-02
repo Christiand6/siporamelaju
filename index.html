@@ -10,6 +10,15 @@
 	a:link {
 	color: #F6D757;
 }
+    a:visited {
+	color: #F6D757;
+}
+a:hover {
+	color: #0056b#F6D7573;
+}
+a:active {
+	color: #F6D757;
+}
     </style>
 </head>
 
@@ -29,50 +38,75 @@
 </nav>
 	
 <div class="container-fluid pt-3 pb-3 mt-5">
-	<h1 class="display-1">Sipora Melaju</h1>
+	<h1 class="display-1">Sipora Melaju</h1><hr style="width:44%; margin-left:0">
 	<br>
-	<div class="row">
+  <div class="row">
 		<div class="col-sm-4">
+			<center><h4>Brief Desc.</h4></center><hr>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 		</div>
+	  	<div class="col-sm-4">
+			<div class="container">
+				<center><h4>Vision</h4></center><hr>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+			</div>
+	  	</div>
+	    <div class="col-sm-4">
+			<div class="container">
+				<center><h4>Mission</h4></center><hr>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+			</div>
+		</div>
 	</div>
-	<br><br>
-	<div class="row">
+	<br>
+  <div class="row">
 		<div class="col">
-			<span class="btn btn-outline-dark style"><a href="#share_story">Share your story!</a></span>
+			<span class="btn btn-outline-dark style share_yours">Share your story!</span>
 			<span class="btn btn-outline-dark style">Check out their stories!</span>
 		</div>
 	</div>
 </div>
-<div id="share_story" class="container-fluid pt-3 pb-3">
+<div id="share_story" class="container-fluid pt-5 pb-3">
 	<h3>You have decided to share yours.</h3><br>
-	<div class="row">
-		<div class="col-sm-5">
-			<form action="/action_page.php">
-    			<div class="form-group">
-      				<label for="usr">Name:</label>
-     				<input type="text" class="form-control" id="usr" name="username">
-    			</div>
-    			<div class="form-group">
-      				<label for="age">Age:</label>
-      				<input type="number" class="form-control" id="age" name="age">
-    			</div>
+	<form id="form_story">
+		<div class="row">
+			<div class="col-sm-6">
 				<div class="form-group">
-      				<label for="job">Current Job:</label>
-     				<input type="text" class="form-control" id="job" name="job">
-    			</div>
-  			</form>
+					<label for="username">Name:</label>
+					<input type="text" class="form-control" id="username" name="username">
+				</div>
+				<div class="form-group">
+					<label for="age">Age:</label>
+					<input type="number" class="form-control" id="age" name="age">
+				</div>
+				<div class="form-group">
+					<label for="job">Current Job:</label>
+					<input type="text" class="form-control" id="job" name="job">
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="form-group">
+					<label for="description">Your story:</label>
+					<textarea rows="5" class="form-control" id="description" name="description"></textarea>
+				</div>
+			</div>
+		</div>
+	</form>
+	<br>
+	<div class="row">
+		<div class="col">
+			<button type="submit" form="form_story">Submit</button>
 		</div>
 	</div>
-	
 </div>
 
-	
-	
-	
-	
-	
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>	
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js">
+</script>
+<script type="text/javascript">
+$('.share_yours').click(function(){
+	$('html,body').animate({ scrollTop: $("#share_story").offset().top}, 1000);
+	return false;
+});
+</script>
 </body>
 </html>

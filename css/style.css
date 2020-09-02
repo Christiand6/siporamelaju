@@ -20,9 +20,5 @@ hr{
 }
 
 @media screen and (max-width:767px){
-	.large_screen {display:none;}
-}
-
-@media screen and (min-width:768px){
-	.small_screen {display:none;}
+	.large_screen {display:inline-flex;}
 }

@@ -24,3 +24,9 @@ hr{
 		display:none;
 	}
 }
+
+@media screen and (min-width:768px){
+	.small_screen{
+		display:none;
+	}
+}

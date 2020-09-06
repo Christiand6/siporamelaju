@@ -8,6 +8,9 @@
 }
 
 span.style{
+	background-color:crimson;
+	padding:4px 10px;
+	cursor: pointer;
 	color:#F6D757;
 	border:solid #F6D757;
 	transition-duration:0.4s;
@@ -20,14 +23,10 @@ hr{
 	background-color:#F6D757;
 }
 
-@media screen and (max-width:767px){
-	.large_screen{
-		display:none;
-	}
+.bright{
+	border-right: 5px solid white;
 }
 
-@media screen and (min-width:768px){
-	.small_screen{
-		display:;
-	}
+.bleft{
+	border-left: 5px solid white;
 }

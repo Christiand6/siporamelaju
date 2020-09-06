@@ -8,7 +8,7 @@
 }
 
 span.style{
-	background-color:crimson;
+	background-color:maroon;
 	padding:4px 10px;
 	cursor: pointer;
 	color:#F6D757;
@@ -23,10 +23,15 @@ hr{
 	background-color:#F6D757;
 }
 
+p{
+	color:white;
+}
+
 .bright{
 	border-right: 5px solid white;
 }
 
 .bleft{
+	margin-left: 5px;
 	border-left: 5px solid white;
 }

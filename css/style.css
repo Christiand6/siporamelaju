@@ -1,9 +1,10 @@
 .nav-link{
-	transition-duration:0.4s;
+	transition-duration:0.5s;
 }
 
 .nav-link:hover{
-	background-color:black;
+	background-color:grey;
+	
 }
 
 span.style{
@@ -27,6 +28,6 @@ hr{
 
 @media screen and (min-width:768px){
 	.small_screen{
-		display:none;
+		display:;
 	}
 }

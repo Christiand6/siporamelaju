@@ -7,6 +7,12 @@
 	
 }
 
+img:hover{
+	opacity:0.5;
+}
+
+
+
 span.style{
 	background-color:maroon;
 	padding:4px 10px;

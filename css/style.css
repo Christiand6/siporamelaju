@@ -89,7 +89,7 @@ p{
 	margin-right:55px;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:769px){
 	.navbar{
 		background-color:#F2EDD7FF;
 	}
@@ -105,5 +105,12 @@ p{
 	
 	.form-inline{
 		display:none;
+	}
+}
+
+@media screen and (max-width:360px){
+	img.resize{
+		width:275px;
+		height:275px;
 	}
 }

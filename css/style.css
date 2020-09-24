@@ -44,13 +44,6 @@ img:hover{
 	opacity:0.5;
 }
 
-img.resize{
-	width:100%;
-	height:auto;
-}
-
-
-
 span.style{
 	background-color:#755139FF;
 	padding:6px 12px;
@@ -103,3 +96,4 @@ p{
 	}
 	
 }
+

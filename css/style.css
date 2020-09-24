@@ -46,7 +46,7 @@ img:hover{
 
 img.resize{
 	width:100%;
-	height:auto;
+	height:100%;
 }
 
 
@@ -94,6 +94,10 @@ p{
 		background-color:#F2EDD7FF;
 	}
 	
+	img.resize{
+		width: 350px;
+		height: 350px;
+	}
 	
 	.rtl{
 		margin-right: 0;

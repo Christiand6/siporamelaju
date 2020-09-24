@@ -103,14 +103,4 @@ p{
 		margin-right: 0;
 	}
 	
-	.form-inline{
-		display:none;
-	}
-}
-
-@media screen and (max-width:360px){
-	img.resize{
-		width:275px;
-		height:275px;
-	}
 }

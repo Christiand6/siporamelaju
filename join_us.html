@@ -62,6 +62,72 @@ a:active {
 	</div>  
 </nav>
 	
+<div class="container-fluid mt-2 pt-2">
+	<div class="row bg_second">
+		<div class="col offset-md-1 text-right">
+			<p class="display-2 txt_second">Selangkah lebih dekat dengan Papa</p>
+		</div> 
+	</div>
+	<div class="row">
+		<div class="col mt-3 offset-md-1 text-right">
+			<blockquote class="blockquote shadow p-3">
+				<p class="mb-0" style="color:#001B42">When you have eliminated the impossible, whatever remains, however improbable, must be the truth?</p>
+				<footer class="blockquote-footer">Sherlock Holmes</footer>
+			</blockquote>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col offset-md-1 text-right">
+			<p>Halo sobat seperjuangan! Setelah melihat-lihat mengenai profile komunitas kami pada <a href="index.html">Homepage Sijuhre Papa</a>, tidak perlu merasa insecure dengan pola hidup masing-masing karena kami yakin bahwa kita semua selalu mempunyai pilihan untuk berubah menjadi lebih baik.</p>
+			<p>Siapkah Anda untuk mengambil <em>leap of faith</em> masing-masing? Bergabunglah dengan kami hanya dengan menekan tombol di bawah ini.
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col offset-md-1 text-right">
+			<span class="style rounded daftar">Daftar</span>
+		</div>
+	</div>
+</div>
+	
+<div class="container-fluid mt-3">
+	<div class="row">
+		<div class="col">
+			<div class="hidden">
+				<form action="/connect.php" method="post">
+					<div class="form-group">
+						<label for="name">Nama:</label>
+						<input type="text" class="form-control" placeholder="Timothy Slanovic" id="name" required>
+					</div>
+					<div class="form-group">
+						<label for="age">Umur:</label>
+						<input type="number" class="form-control" placeholder="20" id="age" required>
+					</div>
+					<div class="form-group">
+						<label for="job">Pekerjaan:</label>
+						<input type="text" class="form-control" placeholder="Mahasiswa" id="job" required>
+					</div>
+					<div class="form-group">
+						<label for="email">Email Address:</label>
+						<input type="email" class="form-control" placeholder="Timothy@gmail.com" id="email" required>
+					</div>
+					<div class="form-group">
+						<label for="phone">No. HP:</label>
+						<input type="tel" class="form-control" placeholder="xxxx-xxxx-xxxx / xxxx-xxxx-xxx" id="phone" required>
+					</div>
+					<div class="form-group form-check">
+						<label class="form-check-label">
+						  <input class="form-check-input" type="checkbox"> Remember me
+						</label>
+					</div>
+					<button type="submit" class="btn style rounded">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+	
 	
 	
 		
@@ -88,11 +154,36 @@ a:active {
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<script>
+$(document).ready(function(){
+	$('.hidden').hide();
+	$('.daftar').click(function(){
+		$('.hidden').show();
+		$(this).hide();
+		$('html, body').animate({
+			scrollTop: $("div.hidden").offset().top
+		}, 1000)
+	});
+});
+</script>
 	
 <script>
 $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();   
 });
 </script>
+	
+<script>
+$("form").keypress(function(e) {
+  //Enter key
+  if (e.which == 13) {
+    return false;
+  }
+});
+</script>
+	
+
+
 </body>
 </html>

@@ -1,4 +1,7 @@
 <?php
+header("Location: join_us.html");
+ 
+/* Make sure that code below does not get executed when we redirect. */
 	$name = $_POST['name'];
 	$age= $_POST['age'];
 	$job = $_POST['job'];
@@ -20,4 +23,5 @@
 		$stmt->close();
 		$conn->close();
 	}
+exit;	
 ?>

@@ -43,6 +43,15 @@ p, .thick{
 	
 }
 
+.display-2{
+	color:#001B42;
+}
+
+.are{
+	background-color:#001B42;
+	color:#755139FF;
+}
+
 img:hover{
 	opacity:0.5;
 }
@@ -87,6 +96,10 @@ p{
 
 @media screen and (max-width:769px){
 	.navbar{
+		background-color:#F2EDD7FF;
+	}
+	
+	.bg_second{
 		background-color:#F2EDD7FF;
 	}
 	

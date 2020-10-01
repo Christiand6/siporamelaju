@@ -1,5 +1,5 @@
 <?php
-header("Location: join_us.html");
+header("Location: submitted.html");
  
 /* Make sure that code below does not get executed when we redirect. */
 	$name = $_POST['name'];

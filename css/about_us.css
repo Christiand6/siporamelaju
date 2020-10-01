@@ -4,6 +4,7 @@ html{
 body{
 	background-color:#F2EDD7FF;
 	background-size:cover;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 
 .bg_second{
@@ -101,6 +102,10 @@ p{
 	
 	.bg_second{
 		background-color:#F2EDD7FF;
+	}
+	
+	.bg_second_view{
+		background-color:#755139FF;
 	}
 	
 }

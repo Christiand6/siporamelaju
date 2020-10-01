@@ -4,6 +4,7 @@ html{
 body{
 	background-color:#F2EDD7FF;
 	background-size:cover;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 
 .nav-link{

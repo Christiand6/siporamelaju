@@ -7,8 +7,9 @@ header("Location: submitted.html");
 	$job = $_POST['job'];
 	$email = $_POST['email'];
 	$phone = $_POST['phone'];
-	$class = $_POST['class'];
-	$chk="";
+	$nutrisi = $_POST['nutrisi'];
+	$aktivitas_fisik = $_POST['aktivitas_fisik'];
+	$tidur = $_POST['tidur'];
 	$hope = $_POST['hope'];
 
 	// Database connection
@@ -17,14 +18,9 @@ header("Location: submitted.html");
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
-		$stmt = $conn->prepare("insert into registration(name, age, job, email, phone, hope) values(?, ?, ?, ?, ?, ?)");
-		foreach($class as $chk1)  
-		{  
-		  $chk .= $chk1.",";  
-		}  
-		$in_ch=mysqli_query($con,"insert into registration(class) values ('$chk')");
+		$stmt = $conn->prepare("insert into registration(name, age, job, email, phone, nutrisi, aktivitas_fisik, tidur,  hope) values(?, ?, ?, ?, ?, ?, ?, ?, ?)");
+		$stmt->bind_param("sississss", $name, $age, $job, $email, $phone, $nutrisi, $aktivitas_fisik, $tidur, $hope);
 		$execval = $stmt->execute();
-		$stmt->bind_param("sissis", $name, $age, $job, $email, $phone, $hope);
 		echo $execval;
 		echo "Registration successfully...";
 		$stmt->close();

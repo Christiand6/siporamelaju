@@ -18,13 +18,13 @@ header("Location: submitted.html");
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
 		$stmt = $conn->prepare("insert into registration(name, age, job, email, phone, hope) values(?, ?, ?, ?, ?, ?)");
-		$stmt->bind_param("sissis", $name, $age, $job, $email, $phone, $class, $hope);
 		foreach($class as $chk1)  
 		{  
 		  $chk .= $chk1.",";  
 		}  
 		$in_ch=mysqli_query($con,"insert into registration(class) values ('$chk')");
 		$execval = $stmt->execute();
+		$stmt->bind_param("sissis", $name, $age, $job, $email, $phone, $hope);
 		echo $execval;
 		echo "Registration successfully...";
 		$stmt->close();

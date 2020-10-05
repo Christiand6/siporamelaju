@@ -7,6 +7,7 @@ header("Location: submitted.html");
 	$job = $_POST['job'];
 	$email = $_POST['email'];
 	$phone = $_POST['phone'];
+	$class = $_POST['class'];
 	$hope = $_POST['hope'];
 
 	// Database connection
@@ -15,8 +16,8 @@ header("Location: submitted.html");
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
-		$stmt = $conn->prepare("insert into registration(name, age, job, email, phone, hope) values(?, ?, ?, ?, ?, ?)");
-		$stmt->bind_param("sissis", $name, $age, $job, $email, $phone, $hope);
+		$stmt = $conn->prepare("insert into registration(name, age, job, email, phone, class, hope) values(?, ?, ?, ?, ?, ?, ?)");
+		$stmt->bind_param("sississ", $name, $age, $job, $email, $phone, $class, $hope);
 		$execval = $stmt->execute();
 		echo $execval;
 		echo "Registration successfully...";

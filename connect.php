@@ -25,5 +25,6 @@ header("Location: submitted.html");
 		$stmt->close();
 		$conn->close();
 	}
+
 exit;	
 ?>

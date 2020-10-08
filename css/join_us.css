@@ -105,6 +105,15 @@ p{
 	margin-right:55px;
 }
 
+.a{
+	border: 10px solid red;
+	animation: mymove 1s infinite;
+}
+
+@keyframes mymove {
+  50% {border-color: lawngreen;}
+}
+
 @media screen and (max-width:769px){
 	.navbar{
 		background-color:#F2EDD7FF;

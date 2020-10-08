@@ -200,22 +200,20 @@ $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();   
 });
 </script>
-<!--<script type="text/javascript">
-$("form").keypress(function(e) {
-  //Enter key
-  if (e.which == 13) {
-    return false;
-  }
-});
-</script>
-<script type="text/javascript">
-$(document).ready(function() {
-	$(".hidden").hide();
-	$(".share_yours").click(function(){
-	  $(".hidden").slideDown('slow');
-	  $(this).hide();
-	})
-  });
-</script>-->
+
+<script>
+   $(window).scroll(function() {
+
+    if ($(this).scrollTop()>300)
+     {
+        $('.fading').fadeOut();
+     }
+    else
+     {
+      $('.fading').fadeIn();
+     }
+ });
+</script>		
+
 </body>
 </html>

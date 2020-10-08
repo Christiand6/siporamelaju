@@ -99,7 +99,7 @@ a:active {
 	<div class="row">
 		<div class="col">
 			<div class="hidden">
-				<form action="connect.php" method="post" name="regis" onsubmit="return validateForm()">
+				<form action="connect.php" method="post" name="regis" onsubmit="return validasi()">
 					<div class="form-group">
 						<label for="name">Nama:</label>
 						<input type="text" class="form-control" placeholder="Timothy Slanovic" id="name" name="name" required>
@@ -212,16 +212,21 @@ $("form").keypress(function(e) {
 </script>
 
 <script>
-function validateForm() {
+function validasi() {
   	var x = document.forms["regis"]["nutrisi"].value;
 	var y = document.forms["regis"]["aktivitas_fisik"].value;
 	var z = document.forms["regis"]["tidur"].value;
-	
-	if (x == "0" || y =="0" || z =="0" ) {
+	console.log(x);
+	console.log(y);
+	console.log(z);
+	if ( x == 0 && y == 0 && z == 0)  {
 		alert("Pilih minimal satu kelas");
 		return false;
 	}
+	else{
+		return true;
 	}
+}
 </script>	
 
 

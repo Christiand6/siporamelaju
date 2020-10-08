@@ -4,7 +4,7 @@ html{
 body{
 	background-color:#F2EDD7FF;
 	background-size:cover;
-	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-family:"Fjalla One", Minimalist;
 }
 
 .nav-link{
@@ -64,18 +64,46 @@ span.read_less_button1:hover{
 	background-color:#755139FF;
 }
 
+span.style{
+	background-color:#755139FF;
+	padding:6px 12px;
+	cursor: pointer;
+	color:#F2EDD7FF;
+	border:solid #755139FF;
+	transition-duration:0.4s;
+}
+
+span.style:hover{
+	background-color:#572B00;
+}
+
+.style{
+	background-color:#755139FF;
+	padding:6px 12px;
+	cursor: pointer;
+	color:#F2EDD7FF;
+	border:solid #755139FF;
+	transition-duration:0.4s;
+}
+
+.style:hover{
+	color:#755139FF;
+	background-color:#F2EDD7FF;
+}
+
 
 hr{
 	background-color:#755139FF;
 	height:5px;
 }
 
-p, .thick{
+.thick{
 	font-weight:700;
 }
 
 p{
 	color:#755139FF;
+	font-weight:bold;
 }
 
 .txt_second{

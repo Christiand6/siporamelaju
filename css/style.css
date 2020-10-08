@@ -5,7 +5,7 @@ html{
 body{
 	background-color:#F2EDD7FF;
 	background-size:cover;
-	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-family:"Fjalla One", Minimalist;
 }
 
 .bg_second{
@@ -16,8 +16,12 @@ body{
 	color:#F2EDD7FF;
 }
 
-p, .thick{
+.thick{
 	font-weight:700;
+}
+
+p {
+	font-weight: bold;
 }
 
 .navbar .navbar-nav .active>.nav-link {

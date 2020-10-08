@@ -216,11 +216,12 @@ function validateForm() {
   	var x = document.forms["regis"]["nutrisi"].value;
 	var y = document.forms["regis"]["aktivitas_fisik"].value;
 	var z = document.forms["regis"]["tidur"].value;
-  if (x == "0" || y =="0" || z =="0" ) {
-    alert("Pilih minimal satu kelas");
-    return false;
-  }
-}
+	
+	if (x == "0" || y =="0" || z =="0" ) {
+		alert("Pilih minimal satu kelas");
+		return false;
+	}
+	}
 </script>	
 
 

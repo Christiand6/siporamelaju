@@ -22,6 +22,7 @@ body{
 
 p {
 	font-weight: bold;
+	color:#755139FF;
 }
 
 .navbar .navbar-nav .active>.nav-link {
@@ -47,6 +48,22 @@ p {
 .nav-link:hover{
 	background-color:grey;
 	
+}
+
+.index_signup{
+	color: #FFEB96;
+	background-color: #001B42;
+	padding: 30px 30px 75px 30px;
+	right:0;
+	z-index: 1;
+	position: absolute;
+	width: 40%;
+	height: 100%;
+	overflow: auto;
+}
+
+.index_signup p{
+	color: #F2EDD7FF;
 }
 
 img:hover{
@@ -79,14 +96,25 @@ span.style1:hover{
 	background-color:#755139FF;
 }
 
+.style{
+	background-color:#755139FF;
+	padding:6px 12px;
+	cursor: pointer;
+	color:#F2EDD7FF;
+	border:solid #755139FF;
+	transition-duration:0.4s;
+}
+
+.style:hover{
+	color:#755139FF;
+	background-color:#F2EDD7FF;
+}
+
 hr{
 	background-color:#755139FF;
 	height:5px;
 }
 
-p{
-	color:#755139FF;
-}
 
 .rtl{
 	margin-right:55px;
@@ -105,5 +133,11 @@ p{
 		margin-right: 0;
 	}
 	
+}
+
+@media screen and (max-width:960px){
+	.index_signup{
+		display: none;
+	}
 }
 

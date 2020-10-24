@@ -15,12 +15,25 @@ body{
 	color:#F2EDD7FF;
 }
 
+.txt_second_nochange{
+	color:#F2EDD7FF;
+}
+
+.txt{
+	color:#755139FF;
+}
+
+.txt_nochange{
+	color:#755139FF;
+}
+
 .thick{
 	font-weight:700;
 }
 
 p{
 	font-weight:bold;
+	color:#755139FF;
 }
 
 .navbar .navbar-nav .active>.nav-link {
@@ -91,9 +104,7 @@ hr{
 	height:5px;
 }
 
-p{
-	color:#755139FF;
-}
+
 
 .rtl{
 	margin-right:55px;
@@ -112,6 +123,14 @@ p{
 }
 
 @media screen and (max-width:992px){
+	.txt_second{
+		color:#755139FF;
+	}
+	
+	.txt{
+		color:#F2EDD7FF;
+	}
+	
 	.bg_second{
 		background-color:#F2EDD7FF;
 	}

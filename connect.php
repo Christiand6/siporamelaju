@@ -13,7 +13,7 @@ header("Location: submitted.html");
 	$hope = $_POST['hope'];
 
 	// Database connection
-	$conn = new mysqli('localhost','root','','sijuhre_papa');
+	$conn = new mysqli('localhost','u762787730_cdinata6','KOd?L7P!','u762787730_LovelyShiny');
 	if($conn->connect_error){
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
@@ -21,7 +21,7 @@ header("Location: submitted.html");
 		$stmt = $conn->prepare("insert into registration(name, age, job, email, phone, nutrisi, aktivitas_fisik, tidur,  hope) values(?, ?, ?, ?, ?, ?, ?, ?, ?)");
 		$stmt->bind_param("sissiiiis", $name, $age, $job, $email, $phone, $nutrisi, $aktivitas_fisik, $tidur, $hope);
 		$stmt->execute();
-		
+		echo "Connected Successfully";
 		$stmt->close();
 		$conn->close();
 	}

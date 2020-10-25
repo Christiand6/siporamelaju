@@ -13,7 +13,7 @@ header("Location: submitted.html");
 	$hope = $_POST['hope'];
 
 	// Database connection
-	$conn = new mysqli('localhost','cdinata6','KOd?L7P!','LovelyShiny');
+	$conn = new mysqli('localhost','u762787730_cdinata6','123OPEN456noerror','u762787730_LovelyShiny');
 	if($conn->connect_error){
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
